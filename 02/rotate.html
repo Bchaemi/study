@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tranform:rotate</title>
+    <style>
+      #container {
+        width: 800px;
+        margin: 20px auto;
+      }
+      .origin {
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin: 60px;
+      }
+      .origin img {
+        width: 100px;
+        height: 100px;
+      }
+      #rotate1:hover {
+        transform: rotate(-45deg);
+      }
+      #rotate2:hover {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="origin" id="rotate1">
+        <img src="/02/images/product01_logo.png" alt="icon" />
+      </div>
+      <div class="origin" id="rotate2">
+        <img src="/02/images/product01_logo.png" alt="icon" />
+      </div>
+    </div>
+  </body>
+</html>
