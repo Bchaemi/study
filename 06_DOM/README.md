@@ -60,7 +60,20 @@
 ### 6.3.3 요소 속성 변경하기
 
 ```html
+<body>
+  <img id="image" src="/images/pic5.jpg" alt="img" />
+  <button onclick="changeImage()">이미지 변경</button>
+  <button onclick="changeSize()">이미지 크기 변경</button>
 
+  <script>
+    const changeImage = () => {
+      document.getElementById("image").src = "/images/pic6.jpg";
+    };
+    const changeSize = () => {
+      document.getElementById("image").width = "200";
+    };
+  </script>
+</body>
 ```
 
 ## 6.4 DOM 노드
